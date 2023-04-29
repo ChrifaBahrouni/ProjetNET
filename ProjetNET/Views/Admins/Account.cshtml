@@ -1,0 +1,60 @@
+﻿@model ProjetNET.Models.Admin
+
+@{
+    ViewData["Title"] = "Account";
+}
+
+
+<div class="row offset-md-2">
+    <h4  > Account : Chrifa.Bahrouni@gmail.com </h4>
+    <h5> Forget password </h5>
+    <div class="row col-md-6">
+
+        <form asp-action="Account">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Reset My password" class="btn btn-outline-dark" />
+            </div>
+        </form>
+
+    </div>
+
+    <h5> change Password</h5>
+    <div class="row col-md-6  ">
+
+        <form asp-action="Account">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"> New Password </label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"> Confirm password </label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="change My password"  class=" btn btn-outline-dark" />
+            </div>
+        </form>
+
+    </div>
+
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

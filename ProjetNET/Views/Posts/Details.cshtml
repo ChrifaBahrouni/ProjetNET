@@ -1,0 +1,101 @@
+﻿@model ProjetNET.Models.Post
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="row ">
+    <h4>Post</h4>
+    <hr />
+    <dl class=" col-md-6">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Countlike)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Countlike)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Countcomment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Countcomment)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Countshare)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Countshare)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Reserve)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Reserve)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User.Id)
+        </dd>
+    </dl>
+
+<div class="col-md-6">
+ <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+     <img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/qdiP4DB.jpg" width="38">
+     <input type="text" class="form-control mr-3" placeholder="Add comment"><button class="btn btn-primary" type="button">Comment</button>
+ </div>
+        <div class="comment-widgets m-b-20">
+        <div class="d-flex flex-row comment-row">
+            <div class="p-2"><span class="round"><img src="https://i.imgur.com/uIgDDDd.jpg" alt="user" width="50"></span></div>
+            <div class="comment-text w-100">
+                <h5>Samso Nagaro</h5>
+                <div class="comment-footer">
+                    <span class="date">April 14, 2019</span>
+                    <span class="label label-info">Pending</span> <span class="action-icons">
+                        <a href="#" data-abc="true"><i class="fa fa-pencil"></i></a>
+                        <a href="#" data-abc="true"><i class="fa fa-rotate-right"></i></a>
+                        <a href="#" data-abc="true"><i class="fa fa-heart"></i></a>
+                    </span>
+                </div>
+                <p class="m-b-5 m-t-10"> when an unknown printer took a galley of type and scrambled it</p>
+            </div>
+        </div>
+
+          <div class="d-flex flex-row comment-row">
+            <div class="p-2"><span class="round"><img src="https://i.imgur.com/uIgDDDd.jpg" alt="user" width="50"></span></div>
+            <div class="comment-text w-100">
+                <h5>Samso Nagaro</h5>
+                <div class="comment-footer">
+                    <span class="date">April 14, 2019</span>
+                    <span class="label label-info">Pending</span> <span class="action-icons">
+                        <a href="#" data-abc="true"><i class="fa fa-pencil"></i></a>
+                        <a href="#" data-abc="true"><i class="fa fa-rotate-right"></i></a>
+                        <a href="#" data-abc="true"><i class="fa fa-heart"></i></a>
+                    </span>
+                </div>
+                <p class="m-b-5 m-t-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div> 
+        </div>
+
+</div>
+</div>
+<div>
+    
+    <a asp-action="Index">Back to List</a>
+</div>

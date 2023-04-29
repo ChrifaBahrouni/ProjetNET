@@ -1,0 +1,85 @@
+﻿@charset "UTF-8";
+
+body {
+    background-color: #fcfcfc;
+}
+
+.row1 {
+    margin: auto;
+    padding: 30px;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+}
+
+    .row1 .card1 {
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+        transition: opacity 0.3s;
+    }
+
+.card-body1 {
+    padding: 0.5rem;
+}
+
+    .card-body1 table {
+        width: 100%;
+    }
+
+        .card-body1 table tr {
+            display: flex;
+        }
+
+            .card-body1 table tr td a.btn {
+                font-size: 0.8rem;
+                padding: 3px;
+            }
+
+            .card-body1 table tr td:nth-child(2) {
+                text-align: right;
+                justify-content: space-around;
+            }
+
+.card-title1:before {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+.notification-invitation .card-body1 .card-title1:before {
+    color: #90caf9;
+    border-color: #90caf9;
+    content: "";
+}
+
+.notification-warning .card-body1 .card-title1:before {
+    color: #ffe082;
+    border-color: #ffe082;
+    content: "";
+}
+
+.notification-danger .card-body1 .card-title1:before {
+    color: #ffab91;
+    border-color: #ffab91;
+    content: "";
+}
+
+.notification-reminder .card-body1 .card-title1:before {
+    color: #ce93d8;
+    border-color: #ce93d8;
+    content: "";
+}
+
+.card1.display-none {
+    display: none;
+    transition: opacity 2s;
+}

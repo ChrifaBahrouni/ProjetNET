@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ProjetNET.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class=" row offset-2">
+<button class=" btn btn-outline-info " asp-action="Create"  > Déposer une publication </button>
+<br />
+<br />
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder=" search here .." aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+</div> 
+<br/>
+
+    @foreach (var item in Model)
+    {
+
+        <a href="Posts/Details/@item.Id">
+            <div class=" card .col-md-4.offset-md-4">
+          
+                <div class="card-body">
+                    <div class="media mb-3">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/medvision-d8be8.appspot.com/o/pexels-pixabay-220453.jpg?alt=media&token=8a6374ba-098e-47c3-8ba3-79b92cba3c91" class="d-block ui-w-40 rounded-circle" alt="">
+                        <div class="media-body ml-3">
+                            Kenneth Frazier
+                            <div class="text-muted small">3 days ago</div>
+                        </div>
+                    </div>
+
+                    <p>
+                        description 
+                      </p>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/medvision-d8be8.appspot.com/o/pexels-klaus-nielsen-6303695.jpg?alt=media&token=2a305a4c-2ab4-4733-8e66-f52032c98d37" width="95%" height="200px" alt="image post " />
+
+                </div>
+                <div class="card-footer">
+                    <a href="javascript:void(0)" class="d-inline-block text-muted">
+                        <strong>123</strong> <small class="align-middle">Likes</small>
+                    </a>
+                    <a href="javascript:void(0)" class="d-inline-block text-muted ml-3">
+                        <strong>12</strong> <small class="align-middle">Comments</small>
+                    </a>
+                    <a href="javascript:void(0)" class="d-inline-block text-muted ml-3">
+                        <strong>12</strong>    <small class="align-middle">Share </small>
+                    </a>
+                </div>
+              
+            </div>
+            </a>
+   
+
+
+    }
+
+<form id="form1" runat="server">
+    <div>
+        <asp:Button ID="Button1" runat="server" Text="Show Popup" />
+        <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server"
+                                        TargetControlID="Button1" PopupControlID="Panel1"
+                                        BackgroundCssClass="modalBackground" />
+        <asp:Panel ID="Panel1" runat="server" CssClass="modalPopup">
+            <asp:Label ID="Label1" runat="server" Text="Enter your name:" />
+            <asp:TextBox ID="TextBox1" runat="server" />
+            <asp:Button ID="Button2" runat="server" Text="Submit" />
+        </asp:Panel>
+    </div>
+</form>
+</div>

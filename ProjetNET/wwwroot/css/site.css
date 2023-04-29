@@ -1,0 +1,132 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+// post style
+.posts-content {
+    margin-top: 20px;
+}
+
+.ui-w-40 {
+    width: 40px !important;
+    height: auto;
+}
+
+.default-style .ui-bordered {
+    border: 1px solid rgba(24,28,33,0.06);
+}
+
+.ui-bg-cover {
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ui-rect {
+    padding-top: 50% !important;
+}
+
+.ui-rect, .ui-rect-30, .ui-rect-60, .ui-rect-67, .ui-rect-75 {
+    position: relative !important;
+    display: block !important;
+    padding-top: 100% !important;
+    width: 100% !important;
+}
+
+.d-flex, .d-inline-flex, .media, .media > :not(.media-body), .jumbotron, .card {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+
+.bg-dark {
+    background-color: rgba(24,28,33,0.9) !important;
+}
+
+.card-footer, .card hr {
+    border-color: rgba(24,28,33,0.06);
+}
+
+.ui-rect-content {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+
+.default-style .ui-bordered {
+    border: 1px solid rgba(24,28,33,0.06);
+}
+
+
+/** commentaire */
+.comment-widgets .comment-row:hover {
+    background: rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+
+.comment-widgets .comment-row {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    padding: 15px;
+}
+
+.comment-text:hover {
+    visibility: hidden;
+}
+
+.comment-text:hover {
+    visibility: visible;
+}
+
+.label {
+    padding: 3px 10px;
+    line-height: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 75%;
+}
+
+.round img {
+    border-radius: 100%;
+}
+
+.label-info {
+    background-color: #1976d2;
+}
+
+.label-success {
+    background-color: green;
+}
+
+.label-danger {
+    background-color: #ef5350;
+}
+
+.action-icons a {
+    padding-left: 7px;
+    vertical-align: middle;
+    color: #99abb4;
+}
+
+    .action-icons a:hover {
+        color: #1976d2;
+    }
+
+.mt-100 {
+    margin-top: 100px
+}

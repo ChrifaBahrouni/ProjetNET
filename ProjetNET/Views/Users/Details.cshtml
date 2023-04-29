@@ -1,0 +1,51 @@
+﻿@model ProjetNET.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div class="row offset-md-2 ">
+    <h4 class="blockquote"> Détails User </h4>
+   <div class="col-md-5">
+        <img src="https://firebasestorage.googleapis.com/v0/b/medvision-d8be8.appspot.com/o/pexels-pixabay-220453.jpg?alt=media&token=8a6374ba-098e-47c3-8ba3-79b92cba3c91" width="100px" height="100px" alt="" />
+    </div> 
+    <dl class=" col-md-7">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoUrl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhotoUrl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+    </dl>
+    <a asp-action="Index">Back to List</a> 
+</div>
+<div>
+    
+   
+</div>
